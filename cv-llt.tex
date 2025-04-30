@@ -13,7 +13,7 @@
 
 
 % Default biblatex style used for the publication list is APA6. If you wish to use a different style or pass other options to biblatex you can change them here. 
-\PassOptionsToPackage{style=ieee,sorting=ydnt,uniquename=init,defernumbers=true}{biblatex}
+\PassOptionsToPackage{style=ieee,sorting=ydnt,uniquename=init,defernumbers=true,maxbibnames=99,minbibnames=3}{biblatex}
 
 % Most commands and style definitions are in settings.sty.
 \usepackage{settings}
@@ -26,13 +26,13 @@
 
 %% Specify your last name(s) and first name(s) (as given in the .bib) to automatically bold your own name in the publications list. 
 %% One caveat: You need to write \bibnamedelima where there's a space in your name for this to work properly; or write \bibnamedelimi if you use initials in the .bib
-% \mynames{Lim/Lian\bibnamedelima Tze}
+\mynames{Xin/Jihao}
 
 %% You can specify multiple names like this, especially if you have changed your name or if you need to highlight multiple authors. See items 6–9 in the example "Journal Articles" output.
-\mynames{Lim/Lian\bibnamedelima Tze,
-  Wong/Lian\bibnamedelima Tze,
-  Lim/Tracy,
-  Lim/L.\bibnamedelimi T.}
+% \mynames{Lim/Lian\bibnamedelima Tze,
+%   Wong/Lian\bibnamedelima Tze,
+%   Lim/Tracy,
+%   Lim/L.\bibnamedelimi T.}
 %% MAKE SURE THERE IS NO SPACE AFTER THE FINAL NAME IN YOUR \mynames LIST
 
 % Change the fonts if you want
@@ -68,18 +68,17 @@
 
 
 \leftheader{%
-  {\LARGE\bfseries\sffamily Your Name Here, Ph.D.}
+  {\LARGE\bfseries\sffamily Jihao Xin}
 
-  \makefield{\faEnvelope[regular]}{\href{mailto:example@gmail.com}{\texttt{example@gmail.com}}}
-  % fontawesome5 doesn't have the X icon so we use
-  % the simpleicons package here instead; but some 
-  % font size adjustment might be needed
-  \makefield{{\scriptsize\simpleicon{x}}}{\!\href{https://x.com/overleaf_example}{\texttt{@overleaf\_example}}}
+  \makefield{\faEnvelope[regular]}{\href{mailto:jihao.xin@kaust.edu.sa}{\texttt{jihao.xin@kaust.edu.sa}}}
+  \makefield{\faPhone}{\texttt{+966 560569149}}
   \makefield{\faLinkedin}
-  {\href{http://www.linkedin.com/in/example/}{\texttt{example}}}
+  {\href{https://www.linkedin.com/in/jihao-xin/}{\texttt{jihao-xin}}}
 
   %% Next line
-  \makefield{\faGlobe}{\url{http://example.example.org/}}
+  \makefield{\faGlobe}{\url{https://jihaoxin.github.io/}}
+  \makefield{\faBirthdayCake}{\texttt{Oct 27, 1998}}
+  \makefield{\faFlag}{\texttt{China}}
   % You can use a tabular here if you want to line up the fields.
 }
 
@@ -94,8 +93,8 @@
 \begin{document}
 \makeheaders[c]
 
-\makerubric{employment}
 \makerubric{education}
+\makerubric{employment}
 
 % If you're not a researcher nor an academic, you probably don't have any publications; delete this line.
 %% Sometimes when a section can't be nicely modelled with the \entry[]... mechanism; hack our own and use \input NOT \makerubric
@@ -103,8 +102,5 @@
 
 \makerubric{skills}
 \makerubric{misc}
-
-\makerubric{referee}
-% \input{referee-full}
 
 \end{document}
