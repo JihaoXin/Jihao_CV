@@ -1,83 +1,57 @@
+@inproceedings{ecai2025,
+author = {Xin, Jihao and Canini, Marco and Richtárik, Peter and Horvath, Samuel},
+title = {Quantize Once, Train Fast: Allreduce-Compatible Compression with Provable Guarantees},
+year = {2025},
+booktitle = {ECAI},
+location = {Bologna, Italy},
+}
+
 @inproceedings{assasyn,
 author = {Weng, Jian and Han, Boyang and Gao, Derui and Gao, Ruijie and Zhang, Wanning and Zhong, An and Xu, Ceyu and Xin, Jihao and Luo, Yangzhixin and Wills, Lisa Wu and Canini, Marco},
 title = {Assassyn: A Unified Abstraction for Architectural Simulation and Implementation},
 year = {2025},
-isbn = {9798400712616},
-publisher = {Association for Computing Machinery},
-address = {New York, NY, USA},
-url = {https://doi.org/10.1145/3695053.3731004},
-doi = {10.1145/3695053.3731004},
-abstract = {The continuous growth of on-chip transistors driven by technology scaling urges architecture developers to design and implement novel architectures to effectively utilize the excessive on-chip resources. Due to the challenges of programming in register-transfer level (RTL) languages, performance modeling based on simulation is typically developed alongside hardware implementation, allowing the exploration of high-level design decisions before dealing with the error-prone, low-level RTL details. However, this approach also introduces new challenges in coordinating across multiple teams to align implementation details separate codebases.In this paper, we address this issue by presenting Assassyn, a unified, high-level, and general-purpose programming framework for architectural simulation and implementation. By taking advantage of the concept of asynchronous event handling, a widely existing behavior in both hardware design and implementation and software engineering, a general-purpose, and high-level programming abstraction is proposed to mitigate the difficulties of RTL programming. Moreover, the unified programming interface naturally enables an accurate and faithful alignment between the simulation-based performance modeling and RTL implementation.Our evaluation demonstrates that Assassyn’s high-level programming interface is sufficiently expressive to implement a wide range of architectures, from architectural components, and application-specific accelerators, to designs as complicated as out-of-order CPUs. All the generated simulators perfectly align with the generated RTL behavior, while achieving 2.2-8.1 \texttimes{} simulation speedup, and requiring 70\% lines of code. The generated RTL achieves comparable perf/area compared to handcrafted RTL, and 6 \texttimes{} perf/area compared to high-level synthesis generated RTL code by introducing by mean 1.26 \texttimes{} lines of code overhead.},
-booktitle = {Proceedings of the 52nd Annual International Symposium on Computer Architecture},
-pages = {1464–1479},
-numpages = {16},
-keywords = {Performance Modeling and Simulation, Open-source Hardware, High-level Hardware Description Language},
-location = {
-},
-series = {ISCA '25}
+booktitle = {ISCA},
+location = {Tokyo, Japan},
 }
 
 @inproceedings{9615751,
   author={Xue, Nian and Guo, Daojing and Zhang, Jie and Xin, Jihao and Li, Zhen and Huang, Xin},
-  booktitle={2021 International Symposium on Networks, Computers and Communications (ISNCC)}, 
   title={OpenFunction for Software Defined IoT}, 
   year={2021},
-  volume={},
-  number={},
-  pages={1-8},
-  keywords={Performance evaluation;Economics;Protocols;Prototypes;Software;Internet of Things;Security;Software Defined Function;OpenFunction;Software Defined Internet of Things;Security;Reprogramming},
-  doi={10.1109/ISNCC52172.2021.9615751}}
+  booktitle={ISNCC},
+  location = {Dubai, UAE},
+  note={\textbf{Best Paper Award}}
+}
 
 
 @inproceedings{xin2025globalqsgd,
 author = {Xin, Jihao and Canini, Marco and Richtárik, Peter and Horváth, Samuel},
 title = {Global-QSGD: Allreduce-compatible Quantization for Distributed Learning with Theoretical Guarantees},
 year = {2025},
-isbn = {979-8-4007-1538-9/2025/03},
-publisher = {Association for Computing Machinery},
-address = {New York, NY, USA},
-url = {https://doi.org/10.1145/3721146.3721932},
-doi = {10.1145/3721146.3721932},
-booktitle = {Proceedings of the 5th Workshop on Machine Learning and Systems},
-pages = {},
-numpages = {},
-keywords = {Distributed Learning, Gradient Compression},
+booktitle = {EuroMLSys},
 location = {Rotterdam, Netherlands},
-series = {EuroMLSys '25}
 }
 
 @inproceedings{distfuse,
-      title={Immediate Communication for Distributed AI Tasks}, 
       author={Jihao Xin and Seongjong Bae and KyoungSoo Park and Marco Canini and Changho Hwang},
+      title={Immediate Communication for Distributed AI Tasks}, 
       year={2024},
-      url={https://hotinfra24.github.io/papers/hotinfra24-final2.pdf},
-      booktitle={The 2nd Workshop on Hot Topics in System Infrastructure}
+      booktitle={HotInfra},
+      location = {Austin, USA},
 }
 
 @inproceedings{10.1145/3630048.3630184,
 author = {Xin, Jihao and Ilin, Ivan and Zhang, Shunkang and Canini, Marco and Richt\'{a}rik, Peter},
 title = {Kimad: Adaptive Gradient Compression with Bandwidth Awareness},
 year = {2023},
-isbn = {9798400704475},
-publisher = {Association for Computing Machinery},
-address = {New York, NY, USA},
-url = {https://doi.org/10.1145/3630048.3630184},
-doi = {10.1145/3630048.3630184},
-abstract = {In distributed training, communication often emerges as a bottleneck. In response, we introduce Kimad, a solution that offers adaptive gradient compression. By consistently monitoring bandwidth, Kimad refines compression ratios to match specific neural network layer requirements. Our exhaustive tests and proofs confirm Kimad's outstanding performance, establishing it as a benchmark in adaptive compression for distributed deep learning.},
-booktitle = {Proceedings of the 4th International Workshop on Distributed Machine Learning},
-pages = {35–48},
-numpages = {14},
-keywords = {gradient compression, distributed training},
+booktitle = {DistML},
 location = {Paris, France},
-series = {DistributedML '23}
 }
 
 @ARTICLE{9975320,
   author={Mao, Mingxuan and Feng, Xinying and Xin, Jihao and Chow, Tommy W. S.},
-  journal={IEEE Transactions on Instrumentation and Measurement}, 
   title={A Convolutional Neural Network-Based Maximum Power Point Voltage Forecasting Method for Pavement PV Array}, 
   year={2023},
-  volume={72},
-  number={},
-  pages={1-9},
-  doi={10.1109/TIM.2022.3227552}}
+  journal={IEEE TIM},
+}
+
