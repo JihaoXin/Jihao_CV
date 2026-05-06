@@ -73,32 +73,63 @@
       \field{title}{Why Smaller Is Slower? Dimensional Misalignment in Compressed {LLMs}}
       \field{year}{2026}
       \true{nocite}
+      \verb{doi}
+      \verb 10.1145/3805621.3807608
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1145/3805621.3807608
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1145/3805621.3807608
+      \endverb
     \endentry
-    \entry{rap2026}{article}{}{}
-      \true{moreauthor}
-      \true{morelabelname}
-      \name{author}{1}{}{%
+    \entry{rap2026}{inproceedings}{}{}
+      \name{author}{5}{}{%
         {{un=0,uniquepart=base,hash=b23d61513352b230a87c059c0fad058f}{%
            family={Xin},
            familyi={X\bibinitperiod},
            given={Jihao},
            giveni={J\bibinitperiod},
            givenun=0}}%
+        {{un=0,uniquepart=base,hash=3dc8d5da8b280862907db0dd5a55cd1d}{%
+           family={Lyu},
+           familyi={L\bibinitperiod},
+           given={Tian},
+           giveni={T\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=e530d2730f43c8b225d6afaa4f83efd3}{%
+           family={Keyes},
+           familyi={K\bibinitperiod},
+           given={David},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=fee478302d613dbe1f5e2123706bc64d}{%
+           family={Ltaief},
+           familyi={L\bibinitperiod},
+           given={Hatem},
+           giveni={H\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=9cd821d3ffc29e88d8d80c3269f82567}{%
+           family={Canini},
+           familyi={C\bibinitperiod},
+           given={Marco},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
       }
       \strng{namehash}{d04fcdf71e7358b1159216a5ea14d728}
-      \strng{fullhash}{d04fcdf71e7358b1159216a5ea14d728}
-      \strng{fullhashraw}{d04fcdf71e7358b1159216a5ea14d728}
-      \strng{bibnamehash}{d04fcdf71e7358b1159216a5ea14d728}
-      \strng{authorbibnamehash}{d04fcdf71e7358b1159216a5ea14d728}
+      \strng{fullhash}{c13d5127594cb421aa4bf73271549bbc}
+      \strng{fullhashraw}{c13d5127594cb421aa4bf73271549bbc}
+      \strng{bibnamehash}{c13d5127594cb421aa4bf73271549bbc}
+      \strng{authorbibnamehash}{c13d5127594cb421aa4bf73271549bbc}
       \strng{authornamehash}{d04fcdf71e7358b1159216a5ea14d728}
-      \strng{authorfullhash}{d04fcdf71e7358b1159216a5ea14d728}
-      \strng{authorfullhashraw}{d04fcdf71e7358b1159216a5ea14d728}
+      \strng{authorfullhash}{c13d5127594cb421aa4bf73271549bbc}
+      \strng{authorfullhashraw}{c13d5127594cb421aa4bf73271549bbc}
       \field{extraname}{2}
       \field{sortinit}{3}
       \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{journaltitle}{arXiv preprint arXiv:2602.02599}
+      \field{booktitle}{arXiv preprint arXiv:2602.02599}
       \field{title}{{KV-Cache} Compression via {RoPE}-Aligned Pruning}
       \field{year}{2026}
       \true{nocite}
@@ -153,6 +184,7 @@
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{booktitle}{ECAI}
+      \field{note}{\textbf{Oral}}
       \field{title}{Quantize Once, Train Fast: Allreduce-Compatible Compression with Provable Guarantees}
       \field{year}{2025}
       \true{nocite}
@@ -350,6 +382,7 @@
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{booktitle}{EuroMLSys}
+      \field{note}{\textbf{Spotlight}}
       \field{title}{Global-QSGD: Allreduce-compatible Quantization for Distributed Learning with Theoretical Guarantees}
       \field{year}{2025}
       \true{nocite}
@@ -404,6 +437,7 @@
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{booktitle}{HotInfra}
+      \field{note}{\textbf{Oral}}
       \field{title}{Immediate Communication for Distributed AI Tasks}
       \field{year}{2024}
       \true{nocite}
