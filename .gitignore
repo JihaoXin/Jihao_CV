@@ -1,2 +1,23 @@
 .out/**
 .DS_Store
+
+# Editor
+.vscode/
+
+# LaTeX build artifacts
+*.aux
+*.bbl
+*.bcf
+*.blg
+*.log
+*.out
+*.run.xml
+*.fls
+*.fdb_latexmk
+*.xdv
+*.synctex.gz
+*.toc
+*.lof
+*.lot
+*.cut
+missfont.log
