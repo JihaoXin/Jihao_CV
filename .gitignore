@@ -4,6 +4,9 @@
 # Editor
 .vscode/
 
+# Compiled PDFs (build from source with latexmk -pdf)
+*.pdf
+
 # LaTeX build artifacts
 *.aux
 *.bbl
