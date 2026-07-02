@@ -37,15 +37,15 @@
 
 % Change the fonts if you want
 \ifxetexorluatex % If you're using XeLaTeX or LuaLaTeX
-  \usepackage{fontspec} 
-  %% You can use \setmainfont etc; I'm just using these font packages here because they provide OpenType fonts for use by XeLaTeX/LuaLaTeX anyway
-  \usepackage[p,osf,swashQ]{cochineal}
-  \usepackage[medium,bold]{cabin}
+  \usepackage{fontspec}
+  %% Times + Helvetica: a more formal, traditional CV look
+  \usepackage{newtxtext}
+  \usepackage[scaled=0.92]{helvet}
   \usepackage[varqu,varl,scale=0.9]{zi4}
 \else % If you're using pdfLaTeX or latex
   \usepackage[T1]{fontenc}
-  \usepackage[p,osf,swashQ]{cochineal}
-  \usepackage{cabin}
+  \usepackage{newtxtext}
+  \usepackage[scaled=0.92]{helvet}
   \usepackage[varqu,varl,scale=0.9]{zi4}
 \fi
 
@@ -70,15 +70,14 @@
 \leftheader{%
   {\LARGE\bfseries\sffamily Jihao Xin}
 
-  \makefield{\faEnvelope[regular]}{\href{mailto:jihao.xin@kaust.edu.sa}{\texttt{jihao.xin@kaust.edu.sa}}}
-  % \makefield{\faPhone}{\texttt{+966 560569149}}
-  \makefield{\faLinkedin}
-  {\href{https://www.linkedin.com/in/jihao-xin/}{\texttt{jihao-xin}}}
+  \makefield{\faEnvelope[regular]}{\href{mailto:jihaoxin1998@gmail.com}{\texttt{jihaoxin1998@gmail.com}}}
+  \makefield{\faLinkedin}{\href{https://www.linkedin.com/in/jihao-xin/}{\texttt{jihao-xin}}}
+  \makefield{\faGlobe}{\href{https://jihaoxin.github.io/}{\texttt{jihaoxin.github.io}}}
 
-  %% Next line
-  \makefield{\faGlobe}{\url{https://jihaoxin.github.io/}}
+  \makefield{\faWeixin}{\texttt{18805362617}}
   \makefield{\faBirthdayCake}{\texttt{Oct 27, 1998}}
-  \makefield{\faFlag}{\texttt{China}}
+  \makefield{\faPassport}{\texttt{China}}
+  \makefield{\faMapMarker}{\texttt{Saudi Arabia}}
   % You can use a tabular here if you want to line up the fields.
 }
 
