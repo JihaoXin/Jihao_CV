@@ -1,0 +1,52 @@
+name: Build CV & sync to website
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - '**.tex'
+      - '**.sty'
+      - '**.bib'
+      - 'photo.png'
+      - '.github/workflows/build-and-sync.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build-and-sync:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout CV repo
+        uses: actions/checkout@v4
+
+      - name: Compile CV (latexmk: pdflatex + biber)
+        uses: xu-cheng/latex-action@v3
+        with:
+          root_file: cv-jihao.tex
+
+      - name: Sync PDF and submodule pointer to website repo
+        env:
+          WEBSITE_TOKEN: ${{ secrets.WEBSITE_TOKEN }}
+        run: |
+          if [ -z "$WEBSITE_TOKEN" ]; then
+            echo "::error::Secret WEBSITE_TOKEN is not set. Create a fine-grained PAT with contents:write on JihaoXin/jihaoxin.github.io and add it to this repo's Actions secrets."
+            exit 1
+          fi
+          git clone "https://x-access-token:${WEBSITE_TOKEN}@github.com/JihaoXin/jihaoxin.github.io.git" website
+          cd website
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git submodule update --init -- Jihao_CV
+          git -C Jihao_CV fetch origin main
+          git -C Jihao_CV checkout "$GITHUB_SHA"
+          cp ../cv-jihao.pdf content/en/uploads/resume.pdf
+          cp ../cv-jihao.pdf content/zh/uploads/resume.pdf
+          git add Jihao_CV content/en/uploads/resume.pdf content/zh/uploads/resume.pdf
+          if git diff --cached --quiet; then
+            echo "Website already up to date"
+          else
+            git commit -m "Auto-sync CV from Jihao_CV@${GITHUB_SHA::7}"
+            git push
+          fi
