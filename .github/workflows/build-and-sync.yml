@@ -41,6 +41,9 @@ jobs:
           git submodule update --init -- Jihao_CV
           git -C Jihao_CV fetch origin main
           git -C Jihao_CV checkout "$GITHUB_SHA"
+          # uploads/resume.pdf were once symlinks into the submodule; remove
+          # whatever is there so cp always writes a regular file
+          rm -f content/en/uploads/resume.pdf content/zh/uploads/resume.pdf
           cp ../cv-jihao.pdf content/en/uploads/resume.pdf
           cp ../cv-jihao.pdf content/zh/uploads/resume.pdf
           git add Jihao_CV content/en/uploads/resume.pdf content/zh/uploads/resume.pdf
