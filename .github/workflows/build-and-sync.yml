@@ -21,7 +21,7 @@ jobs:
       - name: Checkout CV repo
         uses: actions/checkout@v4
 
-      - name: Compile CV (latexmk: pdflatex + biber)
+      - name: Compile CV with latexmk (pdflatex + biber)
         uses: xu-cheng/latex-action@v3
         with:
           root_file: cv-jihao.tex
